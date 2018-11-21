@@ -55,7 +55,6 @@ for n in range(20):
         list_price.append(name.find_element_by_tag_name('b').text)
     button45 = driver.find_element_by_xpath('//*[@id="search_results_table"]/div[4]/div[1]/ul/li[3]')
     button45.click()
-
     time.sleep(5)
 for price in list_price:
     price = price.replace(" ", "")

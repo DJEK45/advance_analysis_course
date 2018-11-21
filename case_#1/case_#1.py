@@ -158,7 +158,6 @@ data_clean['validation_city'] = data_clean['City'].apply(validator_c.c_validate)
 data_clean['id'] = data_clean['validation_city'].apply(get_id_in_row)
 data_clean = data_clean[(data_clean['id'].notnull())]                                                                     # выбираем только все строки имеющие id
 
-
 offer = pd.read_csv("offers.tsv", sep='\t')                                                                               # добавляем табл предложения
 offer['id']= ""                                                                                                           # добавляем столбец id
 offer['Place']= offer['Place'].astype(str)                                                                                # меняем тип данных на str
