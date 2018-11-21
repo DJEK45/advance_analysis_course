@@ -63,3 +63,7 @@ for average in new_list:
     summa_list += average
     summa += 1
 print(round((summa_list/summa), 2))
+
+# TODO: Найти ближайшие аэропорты к городам и определить стоимость билетов туда-обратно
+# TODO: Собрать итоговый файл
+# TODO: провести анализ по нему

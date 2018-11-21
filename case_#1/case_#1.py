@@ -73,6 +73,7 @@ list_email = [validator1.e_validate(list_email) for list_email in all_email]
 print(list_email)
 """
 
+
 class P_Validator():
     def p_validate(self, phone):
         import re
