@@ -55,7 +55,6 @@ for n in range(20):
         list_price.append(name.find_element_by_tag_name('b').text)
     button45 = driver.find_element_by_xpath('//*[@id="search_results_table"]/div[4]/div[1]/ul/li[3]')
     button45.click()
-
     time.sleep(5)
 for price in list_price:
     price = price.replace(" ", "")
@@ -64,3 +63,7 @@ for average in new_list:
     summa_list += average
     summa += 1
 print(round((summa_list/summa), 2))
+
+# TODO: Найти ближайшие аэропорты к городам и определить стоимость билетов туда-обратно
+# TODO: Собрать итоговый файл
+# TODO: провести анализ по нему
